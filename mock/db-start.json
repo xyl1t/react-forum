@@ -1,0 +1,119 @@
+{
+  "users": [
+    {
+      "_id": "1",
+      "name": "Marat"
+    },
+    {
+      "_id": "2",
+      "name": "Metehan"
+    }
+  ],
+
+  "posts": [
+    {
+      "_id": "1",
+      "author": "Marat",
+      "title": "Your favourite Neovim plugins?",
+      "body": "I'm currently a vim user with fairly minimal setup, but will be switching to Neovim. One of the reasons is Telescope that looks like a killer plugin. What other plugins should I give a try? Thanks",
+      "votes": 45,
+      "date": "2023-06-21T10:49:49.086Z",
+      "commentIds": ["3"]
+    },
+    {
+      "_id": "2",
+      "author": "Marat",
+      "title": "Seeking Thunderbolt 3/4 Hub Recommendation for 2023 MacBook Pro M2 Pro: Dual Monitors and USB Connectivity",
+      "body": "I'm currently on the lookout for a Thunderbolt 3/4 hub for my 2023 MacBook Pro M2 Pro. My main requirements are the ability to connect dual monitors and have additional USB ports for enhanced connectivity. I'm particularly interested in hearing from individuals who have first-hand experience using a Thunderbolt hub and can offer a solid recommendation.\n\n One hub that caught my attention is the Belkin Thunderbolt 3 Dock Core. I've heard positive things about it, but I'd love to know if someone has actually tried it and can vouch for its performance and compatibility with the M2 Pro model.\n\n If you have any insights or personal experiences with this hub or any other Thunderbolt 3/4 hub that excels in supporting dual monitors and providing extra USB connections, I would greatly appreciate your input.",
+      "votes": 14,
+      "date": "2023-06-18T22:03:44.772Z",
+      "commentIds": ["8"]
+    },
+    {
+      "_id": "3",
+      "author": "Hasan",
+      "title": "Where to ask super beginner Rust questions",
+      "body": "I'm a professional C and Python dev, but an absolute beginner in Rust. I'm trying to learn some basics, but even the simplest things appear difficult to me right now.",
+      "votes": 58,
+      "date": "2023-06-20T13:04:26.271Z",
+      "commentIds": ["1", "2"]
+    },
+    {
+      "_id": "4",
+      "author": "Max",
+      "title": "How to configure external screen as main/default if your primary laptop screen isn't working?",
+      "body": "My Macbook screen is glitchy, sometimes flickers, sometimes goes completely black, so I'm using an external monitor. To get this to work, I went to System/Display and then drag one display on top of another to mirror, then make the external display the default. I could do this because my laptop screen was visible for a few minutes.\n\n But now the laptop screen has gone completely black. What happens if the system has to reboot? My laptop screen won't be visible. I'm just not sure how to use an external display if the laptop screen isn't working.\n\n Will I have to go through this setup procedure again? Will it remember my configuration?\n\n I figured out how to make my external screen the default so I'm able to continue working.\n\n I'm scared that if my computer reboots then it might revert to the laptop's screen becoming default, and if it's black then I won't be able to work with the external screen? Because I won't be able to configure the external screen as the default?",
+      "votes": 8,
+      "date": "2023-06-20T06:17:46.271Z"
+    }
+  ],
+
+  "comments": [
+    {
+      "_id": "1",
+      "author": "Xyl1t",
+      "body": "Ich weiß nicht",
+      "votes": -10,
+      "date": "2023-06-18T22:03:44.772Z"
+    },
+    {
+      "_id": "2",
+      "author": "Rustacean",
+      "body": "Try googling",
+      "votes": 12,
+      "date": "2023-06-18T22:03:44.772Z"
+    },
+    {
+      "_id": "3",
+      "author": "Maskdask",
+      "body": "My current favorite sleeper plugin is other.nvim which lets you pair kinds of files together and go to the \"other\" file. I use it to go to the current file's unit tests and vice versa, among other things.\n\nAlso I really like leap.nvim which in my opinion is the best thought out \"hop\" variation.",
+      "votes": 24,
+      "date": "2023-06-18T22:03:44.772Z",
+      "commentIds": ["4", "7"]
+    },
+    {
+      "_id": "4",
+      "author": "Miserable-Ad-7341",
+      "body": "I have to respectfully disagree since folke just released flash.nvim and it's amazing and works super well :D",
+      "votes": 13,
+      "date": "2023-06-18T22:03:44.772Z",
+      "commentIds": ["5", "6"]
+    },
+    {
+      "_id": "5",
+      "author": "folke",
+      "body": "You're fast :) I only made the repo public about two hours ago.\n\nSoft launch for now. A reddit post will follow somewhere next week.",
+      "votes": 22,
+      "date": "2023-06-18T22:03:44.772Z"
+    },
+    {
+      "_id": "6",
+      "author": "Maskdask",
+      "body": "Oooh i haven't seen that one, will have to check it out",
+      "votes": 2,
+      "date": "2023-06-18T22:03:44.772Z"
+    },
+    {
+      "_id": "7",
+      "author": "fab_71",
+      "body": "got a question about other. I am using harpoon.nvim atm. What’s the benefit of using other or do they complement each other?\n\n Sorry for the question, still pretty new to nvim",
+      "votes": 3,
+      "date": "2023-06-18T22:03:44.772Z"
+    },
+    {
+      "_id": "8",
+      "author": "Maskdask",
+      "body": "Oooh i haven't seen that one, will have to check it out",
+      "votes": 2,
+      "date": "2023-06-18T22:03:44.772Z",
+      "commentIds": ["9"]
+    },
+    {
+      "_id": "9",
+      "author": "Maskdask",
+      "body": "Oooh i haven't seen that one, will have to check it out",
+      "votes": 2,
+      "date": "2023-06-18T22:03:44.772Z"
+    }
+  ]
+}
