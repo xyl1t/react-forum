@@ -16,15 +16,23 @@ export const CommentBlock = ({ commentIds, children }) => {
       if (!Array.isArray(commentIds)) return;
 
       const arr = [];
-      for (const cId of commentIds) {
-        const resp = await fetch(`/api/comments/${cId}?_sort=date&_order=desc`);
-        const data = await resp.json();
 
-        arr.push(data);
-      }
-      setComments(arr);
-      const rep = arr.reduce((p, v) => ({ ...p, [v._id]: false }), {});
-      setReplying(rep);
+      // After sending a comment, it takes time for the server to update the
+      // database and if the client fetches the data immediately, it fail
+      // because it tries to fetch a comment that doesn't exist yet in the
+      // database. Therefore, the client waits for some time before fetching.
+      setTimeout(async () => {
+        console.log(commentIds);
+        for (const cId of commentIds) {
+          const resp = await fetch(`/api/comments/${cId}?_sort=date&_order=desc`);
+          const data = await resp.json();
+
+          arr.push(data);
+        }
+        setComments(arr);
+        const rep = arr.reduce((p, v) => ({ ...p, [v._id]: false }), {});
+        setReplying(rep);
+      }, 50);
     };
     fetchData();
   }, [commentIds]);
